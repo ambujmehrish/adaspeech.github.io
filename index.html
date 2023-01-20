@@ -14611,46 +14611,53 @@ Utterance 4: I will go over tomorrow afternoon.</p>
 <table border="0">
  <tr>
     <td style="text-align: left"><b style="font-size:14px">Ground Truth</b></td> 
-    <td style="text-align: left"><b style="font-size:14px">CVAE-NL</b></td>
-    <td style="text-align: left"><b style="font-size:14px">CVAE-L</b></td>
-    <td style="text-align: left"><b style="font-size:14px">GST</b></td>
-    <td style="text-align: left"><b style="font-size:14px">GMVAE</b></td>
-    <td style="text-align: left"><b style="font-size:14px">Conv CVAE-NL</b></td>
-    <td style="text-align: left"><b style="font-size:14px">Conv CVAE-L</b></td>
+    <td style="text-align: left"><b style="font-size:14px">Fine-tuning</b></td>
+    <td style="text-align: left"><b style="font-size:14px">Bottleneck/b></td>
+    <td style="text-align: left"><b style="font-size:14px">Prefix-tuning</b></td>
+    <td style="text-align: left"><b style="font-size:14px">LoRA</b></td>
+    <td style="text-align: left"><b style="font-size:14px">ConvAdapter</b></td>
+    <!-- <td style="text-align: left"><b style="font-size:14px">Conv CVAE-L</b></td>
     <td style="text-align: left"><b style="font-size:14px">Conv GST</b></td>
-    <td style="text-align: left"><b style="font-size:14px">Conv GMVAE</b></td>
+    <td style="text-align: left"><b style="font-size:14px">Conv GMVAE</b></td> -->
  </tr>
  <tr>
-    <td>Speaker: ABA (Arabic) <audio src="audio/MOS/GT/ABAarctic_a0334.wav" controls>alternative text</audio><br/>
-Speaker: HKK (Korean) <audio src="audio/MOS/GT/HKKarctic_a0304.wav" controls>alternative text</audio><br/>
-Speaker: NCC (Chinese) <audio src="audio/MOS/GT/NCCarctic_a0003.wav" controls>alternative text</audio><br/>
-Speaker: SVBI (Hindi) <audio src="audio/MOS/GT/SVBIarctic_a0390.wav" controls>alternative text</audio>
+    <td>Speaker ID: 209 <audio src="audio/LibriTTS/GroundTruth/209_000012_000001.wav" controls>alternative text</audio><br/>
+Speaker ID: 410 <audio src="audio/LibriTTS/GroundTruth/410_000033_000001.wav" controls>alternative text</audio><br/>
+Speaker: 5147 <audio src="audio/LibriTTS/GroundTruth/5147_000059_000000.wav" controls>alternative text</audio><br/>
+Speaker: 66172 <audio src="audio/LibriTTS/GroundTruth/66172_000003_000000.wav" controls>alternative text</audio><br/>
+Speaker: 90848 <audio src="audio/LibriTTS/GroundTruth/90848_000007_000002.wav" controls>alternative text</audio>
     </td>
-    <td><audio src="audio/MOS/CVAE-NL/ABAarctic_a0334.wav" controls>alternative text</audio><br/>
-        <audio src="audio/MOS/CVAE-NL/HKKarctic_a0304.wav" controls>alternative text</audio><br/>
-        <audio src="audio/MOS/CVAE-NL/NCCarctic_a0003.wav" controls>alternative text</audio><br/>
-        <audio src="audio/MOS/CVAE-NL/SVBIarctic_a0390.wav" controls>alternative text</audio>
+    <td><audio src="audio/LibriTTS/FineTune/209_000012_000001.wav" controls>alternative text</audio><br/>
+        <audio src="audio/LibriTTS/FineTune/410_000033_000001.wav" controls>alternative text</audio><br/>
+        <audio src="audio/LibriTTS/FineTune/5147_000059_000000.wav" controls>alternative text</audio><br/>
+        <audio src="audio/LibriTTS/FineTune/66172_000003_000000.wav" controls>alternative text</audio><br/>
+        <audio src="audio/LibriTTS/FineTune/90848_000007_000002.wav" controls>alternative text</audio>
     </td>
-    <td><audio src="audio/MOS/CVAE-L/ABAarctic_a0334.wav" controls>alternative text</audio><br/>
-        <audio src="audio/MOS/CVAE-L/HKKarctic_a0304.wav" controls>alternative text</audio><br/>
-        <audio src="audio/MOS/CVAE-L/NCCarctic_a0003.wav" controls>alternative text</audio><br/>
-        <audio src="audio/MOS/CVAE-L/SVBIarctic_a0390.wav" controls>alternative text</audio>
+    <td><audio src="audio/LibriTTS/Bottleneck/209_000012_000001.wav" controls>alternative text</audio><br/>
+      <audio src="audio/LibriTTS/Bottleneck/410_000033_000001.wav" controls>alternative text</audio><br/>
+      <audio src="audio/LibriTTS/Bottleneck/5147_000059_000000.wav" controls>alternative text</audio><br/>
+      <audio src="audio/LibriTTS/Bottleneck/66172_000003_000000.wav" controls>alternative text</audio><br/>
+      <audio src="audio/LibriTTS/Bottleneck/90848_000007_000002.wav" controls>alternative text</audio>
     </td>
-    <td><audio src="audio/MOS/GST/ABAarctic_a0334.wav" controls>alternative text</audio><br/>
-        <audio src="audio/MOS/GST/HKKarctic_a0304.wav" controls>alternative text</audio><br/>
-        <audio src="audio/MOS/GST/NCCarctic_a0003.wav" controls>alternative text</audio><br/>
-        <audio src="audio/MOS/GST/SVBIarctic_a0390.wav" controls>alternative text</audio>
+    <td><audio src="audio/LibriTTS/Prefix/209_000012_000001.wav" controls>alternative text</audio><br/>
+      <audio src="audio/LibriTTS/Prefix/410_000033_000001.wav" controls>alternative text</audio><br/>
+      <audio src="audio/LibriTTS/Prefix/5147_000059_000000.wav" controls>alternative text</audio><br/>
+      <audio src="audio/LibriTTS/Prefix/66172_000003_000000.wav" controls>alternative text</audio><br/>
+      <audio src="audio/LibriTTS/Prefix/90848_000007_000002.wav" controls>alternative text</audio>
     </td>
-    <td><audio src="audio/MOS/GMVAE/ABAarctic_a0334.wav" controls>alternative text</audio><br/>
-        <audio src="audio/MOS/GMVAE/HKKarctic_a0304.wav" controls>alternative text</audio><br/>
-        <audio src="audio/MOS/GMVAE/NCCarctic_a0003.wav" controls>alternative text</audio><br/>
-        <audio src="audio/MOS/GMVAE/SVBIarctic_a0390.wav" controls>alternative text</audio>
+    <td><audio src="audio/LibriTTS/LoRA/209_000012_000001.wav" controls>alternative text</audio><br/>
+      <audio src="audio/LibriTTS/LoRA/410_000033_000001.wav" controls>alternative text</audio><br/>
+      <audio src="audio/LibriTTS/LoRA/5147_000059_000000.wav" controls>alternative text</audio><br/>
+      <audio src="audio/LibriTTS/LoRA/66172_000003_000000.wav" controls>alternative text</audio><br/>
+      <audio src="audio/LibriTTS/LoRA/90848_000007_000002.wav" controls>alternative text</audio>
     </td>
-    <td><audio src="audio/MOS/convCVAE-NL/ABA_Korean_He will knock you off a few sticks in no time.wav" controls>alternative text</audio><br/>
-        <audio src="audio/MOS/convCVAE-NL/HKK_Arabic_I graduated last of my class.wav" controls>alternative text</audio><br/>
-        <audio src="audio/MOS/convCVAE-NL/NCC_Hindi_For the twentieth time that evening the two men shook hands.wav" controls>alternative text</audio><br/>
-        <audio src="audio/MOS/convCVAE-NL/SVBI_Chinese_I will go over tomorrow afternoon.wav" controls>alternative text</audio>
+    <td><audio src="audio/LibriTTS/ConAdapter/209_000012_000001.wav" controls>alternative text</audio><br/>
+      <audio src="audio/LibriTTS/ConAdapter/410_000033_000001.wav" controls>alternative text</audio><br/>
+      <audio src="audio/LibriTTS/ConAdapter/5147_000059_000000.wav" controls>alternative text</audio><br/>
+      <audio src="audio/LibriTTS/ConAdapter/66172_000003_000000.wav" controls>alternative text</audio><br/>
+      <audio src="audio/LibriTTS/ConAdapter/90848_000007_000002.wav" controls>alternative text</audio>
     </td>
+
     <td><audio src="audio/MOS/convCVAE-L/ABA_Korean_He will knock you off a few sticks in no time.wav" controls>alternative text</audio><br/>
         <audio src="audio/MOS/convCVAE-L/HKK_Arabic_I graduated last of my class.wav" controls>alternative text</audio><br/>
         <audio src="audio/MOS/convCVAE-L/NCC_Hindi_For the twentieth time that evening the two men shook hands.wav" controls>alternative text</audio><br/>
