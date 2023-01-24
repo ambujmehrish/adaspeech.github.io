@@ -14628,9 +14628,11 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <h2 id="Accent-conversion-task">LibriTTS Dataset<a class="anchor-link" href="#Accent-conversion-task">&#182;</a></h2><p>LibriTTS is a multi-speaker English corpus of approximately 585 hours of read English speech at 24kHz sampling rate, 
   prepared by Heiga Zen with the assistance of Google Speech and Google Brain team members. 
   The LibriTTS corpus is designed for TTS research.</p>
-<p>Utterance 1: For the twentieth time that evening the two men shook hands.
-Utterance 2: And you always want to see it in the superlative degree.
-Utterance 3: I will go over tomorrow afternoon.</p>
+<p>To compare the performance of the proposed method and the
+baseline models, we compute Mel-Cepstral Distortion (MCD), Word Error Rate (WER). MCD is a measure of the difference between two sequences of mel cep-
+stra, whereas WER can serve as a comparison metric for different speech synthesis models to measure the intelligibility of generated speech among them. In our experiments, we use
+enterprise-grade speech-to-text (STT) pre-trained silero models [40] for computing WER. We compute WER for ground truth utterances to allow for relative comparison between the
+models </p>
 <table border="0">
  <tr>
    <td style="text-align: center"><b style="font-size:14px">ID</b></td> 
