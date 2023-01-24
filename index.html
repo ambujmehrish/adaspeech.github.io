@@ -14692,7 +14692,9 @@ models </p>
     </td>
  </tr>
 </table>
-
+<h2>LibriTTS: Objective Evaluation</h2>
+<p>Mean ceptral distortion (MCD)</p>
+<p>Automatic Speech Recognition (wer)</p>
 <style type="text/css">
   .tg  {border-collapse:collapse;border-spacing:0;}
   .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -14749,6 +14751,7 @@ models </p>
 <p>Utterance 1: For the twentieth time that evening the two men shook hands.
 Utterance 2: And you always want to see it in the superlative degree.
 Utterance 3: I will go over tomorrow afternoon.</p>
+
 <table border="0">
   <tr>
     <!-- <td style="text-align: center"><b style="font-size:14px">ID</b></td>  -->
@@ -14808,6 +14811,60 @@ Utterance 3: I will go over tomorrow afternoon.</p>
      </td>
   </tr>
  </table>
+ <h2>L2-ARCTIC: Objective Evaluation</h2>
+<p>Mean ceptral distortion (MCD)</p>
+<p>Automatic Speech Recognition (wer)</p>
+<style type="text/css">
+  .tg  {border-collapse:collapse;border-spacing:0;}
+  .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+    overflow:hidden;padding:10px 5px;word-break:normal;}
+  .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+    font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+  .tg .tg-pb0m{border-color:inherit;text-align:center;vertical-align:bottom}
+  .tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+  </style>
+  <table class="tg">
+  <thead>
+    <tr>
+      <th class="tg-c3ow">Method</th>
+      <th class="tg-c3ow">#Parameters</th>
+      <th class="tg-c3ow">wer</th>
+      <th class="tg-c3ow">MCD</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="tg-c3ow">Finetuning</td>
+      <td class="tg-pb0m">35802977</td>
+      <td class="tg-pb0m">0.2141</td>
+      <td class="tg-pb0m">6.71469</td>
+    </tr>
+    <tr>
+      <td class="tg-c3ow">Bottleneck</td>
+      <td class="tg-pb0m">659200</td>
+      <td class="tg-pb0m">0.2504</td>
+      <td class="tg-pb0m">6.544</td>
+    </tr>
+    <tr>
+      <td class="tg-c3ow">Prefix</td>
+      <td class="tg-pb0m">153600</td>
+      <td class="tg-pb0m">0.3244</td>
+      <td class="tg-pb0m">7.4264</td>
+    </tr>
+    <tr>
+      <td class="tg-c3ow">LoRA</td>
+      <td class="tg-pb0m">81920</td>
+      <td class="tg-pb0m">0.3291</td>
+      <td class="tg-pb0m">7.0698</td>
+    </tr>
+    <tr>
+      <td class="tg-c3ow">Convadapter</td>
+      <td class="tg-pb0m">108800</td>
+      <td class="tg-pb0m">0.3227</td>
+      <td class="tg-pb0m"></td>
+    </tr>
+  </tbody>
+  </table>
 </body>
 
 
