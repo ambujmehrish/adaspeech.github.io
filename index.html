@@ -14604,7 +14604,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="TTS">Text-To-Speech (TTS)<a class="anchor-link" href="TTS">&#182;</a></h2><p>A Non-Autoregressive Transformer based TTS, supporting a family of SOTA transformers.</p>
-<p>Pre-trained Model: A n0n-autoregressive transformer based model is pre trained using VCTK dataset. The CSTR VCTK Corpus includes speech data uttered by 110 English speakers (multi-speaker TTS) with various accents.
+<p>Pre-trained Model: A n0n-autoregressive transformer based model is pre trained using VCTK dataset [4]. The CSTR VCTK Corpus includes speech data uttered by 110 English speakers (multi-speaker TTS) with various accents.
    Each speaker reads out about 400 sentences, which were selected from a newspaper, the rainbow passage and an elicitation paragraph used for the speech accent archive.</p>
  <p>Pre-Training</p> 
  <p>Adaptation to new dataset</p> 
@@ -14625,7 +14625,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 </div>
-<h2 id="Accent-conversion-task">LibriTTS Dataset<a class="anchor-link" href="#Accent-conversion-task">&#182;</a></h2><p>LibriTTS is a multi-speaker English corpus of approximately 585 hours of read English speech at 24kHz sampling rate, 
+<h2 id="Accent-conversion-task">LibriTTS Dataset<a class="anchor-link" href="#Accent-conversion-task">&#182;</a></h2><p>LibriTTS [5] is a multi-speaker English corpus of approximately 585 hours of read English speech at 24kHz sampling rate, 
   prepared by Heiga Zen with the assistance of Google Speech and Google Brain team members. 
   The LibriTTS corpus is designed for TTS research.</p>
 <p>To compare the performance of the proposed method and the
@@ -14723,8 +14723,8 @@ models </p>
  </tr>
 </table>
 <h2>LibriTTS: Objective Evaluation</h2>
-<p>Mean ceptral distortion (MCD)</p>
-<p>Automatic Speech Recognition (wer)</p>
+<p>Mean ceptral distortion (MCD) [2]</p>
+<p>Automatic Speech Recognition (wer) [3]</p>
 <style type="text/css">
   .tg  {border-collapse:collapse;border-spacing:0;}
   .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -14776,7 +14776,7 @@ models </p>
   </tbody>
   </table>
 
-<h2 id="Accent-conversion-task">L2Arctic Dataset<a class="anchor-link" href="#Accent-conversion-task">&#182;</a></h2><p> L2-ARCTIC, a speech corpus of non-native English intended for research in  voice conversion,
+<h2 id="Accent-conversion-task">L2Arctic Dataset<a class="anchor-link" href="#Accent-conversion-task">&#182;</a></h2><p> L2-ARCTIC [6], a speech corpus of non-native English intended for research in  voice conversion,
    accent conversion, TTS and mispronunciation detection.</p>
 <p>Utterance 1: For the twentieth time that evening the two men shook hands.
 Utterance 2: And you always want to see it in the superlative degree.
@@ -14872,8 +14872,8 @@ Utterance 3: I will go over tomorrow afternoon.</p>
   </tr>
  </table>
  <h2>L2-ARCTIC: Objective Evaluation</h2>
-<p>Mean ceptral distortion (MCD)</p>
-<p>Automatic Speech Recognition (wer)</p>
+<p>Mean ceptral distortion (MCD)[2]</p>
+<p>Automatic Speech Recognition (wer) [3]</p>
 <style type="text/css">
   .tg  {border-collapse:collapse;border-spacing:0;}
   .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -14927,8 +14927,13 @@ Utterance 3: I will go over tomorrow afternoon.</p>
   </table>
 </body>
 
-
-
+<h2>References</h2>
+<p>[1] https://github.com/keonlee9420/Comprehensive-Transformer-TTS</p>
+<p>[2] https://github.com/SamuelBroughton/Mel-Cepstral-Distortion/blob/master/mel-cepstral-distortion.ipynb</p>
+<p>[3] Silero models:pre-trained enterprise-grade stt/tts models and benchmarks,”: https://github.com/snakers4/silero-models/wiki/Quality-Benchmarksen-v6.</p>>
+<p>[4] Junichi Yamagishi, Christophe Veaux, Kirsten MacDonald, et al., “Cstr vctk corpus: English multi-speaker corpus for cstr voice cloning toolkit (version 0.92),”</p>
+<p>[5] Zen H, Dang V, Clark R, Zhang Y, Weiss RJ, Jia Y, Chen Z, Wu Y. LibriTTS: A Corpus Derived from LibriSpeech for Text-to-Speech}}. Proc. Interspeech 2019. 2019:1526-30.</p>
+<p>[6] Zhao, Guanlong, Sinem Sonsaat, Alif Silpachai, Ivana Lucic, Evgeny Chukharev-Hudilainen, John Levis, and Ricardo Gutierrez-Osuna. "L2-ARCTIC: A non-native English speech corpus." In INTERSPEECH, pp. 2783-2787. 2018.</p>
 
 
 
